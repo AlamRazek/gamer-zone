@@ -39,7 +39,7 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin: 32px 240px;
+    margin: 28px 200px;
 }
 
 .navigation-bar {
@@ -93,13 +93,16 @@ body {
     background-size: 100% 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+.banner-img {
+    width: 100%;
+    margin-right: 160px;
+}
+
 .banner-img img {
-    width: 700px;
-    margin-right: 170px;
+    width: 100%;
 }
 
 .banner-title {
@@ -107,8 +110,44 @@ body {
     text-align: center;
     font-size: 2.9rem;
     font-weight: 600;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 0;
+}
+
+.banner-goat {
+    font-size: 5.638rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.banner-text-content {
+    margin-left: 160px;
+}
+
+.banner-text-content p {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+}
+
+.btn1 {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    margin-right: 16px;
+}
+
+.btn2 {
+    background: #4EC5F7;
 }
 
 
@@ -117,4 +156,29 @@ body {
 main {
     max-width: 1440px;
     margin: 100px auto;
+}
+
+
+/* responsive with media quary */
+
+@media screen and (max-width:576px) {
+    .navigation {
+        flex-direction: column;
+        margin: 1px auto;
+        padding: 10px;
+    }
+    .navigation .logo {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .navigation-bar {
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .banner-img img {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

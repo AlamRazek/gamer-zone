@@ -1,0 +1,77 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Work Sans;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* header section navigation bar */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.logo-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-title .logo-g {
+    color: #FF42A5;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 240px;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar li {
+    list-style: none;
+    margin-left: 26px;
+}
+
+.navigation-bar li a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.nav-social {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 17px 24px;
+}
+
+.navigation-bar .nav-social span {
+    color: #3C354F;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.navigation-bar .fa-brands {
+    margin-left: 10px;
+    cursor: pointer;
+}

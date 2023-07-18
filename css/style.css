@@ -69,9 +69,52 @@ body {
     color: #3C354F;
     font-size: 1.12rem;
     font-weight: 500;
+    margin-right: 15px;
 }
 
 .navigation-bar .fa-brands {
-    margin-left: 10px;
+    margin-left: 3px;
     cursor: pointer;
+    width: 30px;
+}
+
+
+/* header banner section */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+}
+
+.banner-text {
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img img {
+    width: 700px;
+    margin-right: 170px;
+}
+
+.banner-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* main styles */
+
+main {
+    max-width: 1440px;
+    margin: 100px auto;
 }

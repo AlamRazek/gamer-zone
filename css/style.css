@@ -169,6 +169,11 @@
         gap: 24px;
     }
     
+    .game-cart {
+        position: relative;
+        max-width: 400px;
+    }
+    
     .games-cart-title {
         color: #0B0223;
         font-size: 2.8rem;
@@ -199,10 +204,46 @@
         border-radius: 16px;
         cursor: pointer;
         width: 100%;
-        backface-visibility: hidden;
+        display: block;
     }
     
-    .game-cart p {
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.2s linear;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    
+    .image-o-desc {
+        font-size: 1.2rem;
+        background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 2px;
+    }
+    
+    .fa-circle-play {
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    
+    .image-overlay:hover {
+        opacity: 1;
+    }
+    
+    .game-carts p {
         color: #534C64;
         font-size: 1.2rem;
         font-weight: 500;
@@ -342,15 +383,16 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
+        padding-bottom: 25px;
     }
     
     .footer-condition span {
-        margin-left: 50px;
         color: rgba(255, 255, 255, 0.60);
         text-align: center;
         font-size: 1rem;
         font-weight: 500;
         margin-bottom: 24px;
+        padding: 20px;
     }
     
     .footer-last {
@@ -358,7 +400,7 @@
         text-align: center;
         font-size: 1rem;
         font-weight: 500;
-        padding-bottom: 100px;
+        padding-bottom: 18px;
     }
     /* responsive with media quary */
     

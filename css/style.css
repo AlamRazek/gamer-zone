@@ -482,6 +482,7 @@
             display: block;
         }
     }
+    /* medium screen */
     
     @media screen and (min-width:576px) and (max-width: 768px) {
         .navigation {
@@ -490,16 +491,17 @@
         .navigation-bar {
             flex-direction: column;
         }
-        /* .nav-social {
-            margin: 0 auto;
+        .logo {
+            justify-content: center;
+            padding-bottom: 8px;
         }
-        .fa-brands {
-            margin: 0 auto;
-        } */
         .banner {
             flex-direction: column;
             margin: 0 auto;
             padding: 30px;
+        }
+        .banner-img {
+            padding-right: 0;
         }
         .game-carts {
             grid-template-columns: repeat(2, 1fr);
@@ -509,6 +511,7 @@
         .play {
             flex-direction: column;
             padding: 0 35px;
+            margin-top: 0;
         }
         .play-text {
             margin: 0 auto;
